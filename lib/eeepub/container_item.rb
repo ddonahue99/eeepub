@@ -89,6 +89,12 @@ module EeePub
         'application/x-dtbncx+xml'
       when /.*\.opf$/i
         'application/oebps-package+xml'
+      when /.*\.eot$/i
+        'application/vnd.ms-fontobject'
+      when /.*\.woff$/i
+        'application/x-woff'
+      when /.*\.ttf$/i
+        'application/x-font-ttf'
       end
     end
 
