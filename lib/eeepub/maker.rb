@@ -56,7 +56,7 @@ module EeePub
 
     def identifier(id, options)
       @identifiers ||= []
-      @identifiers << {:value => id, :scheme => options[:scheme]}
+      @identifiers << options.merge(:value => id)
     end
 
     # @param [Proc] block the block for initialize
